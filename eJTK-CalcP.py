@@ -45,7 +45,6 @@ def __create_parser__():
         )
 
     p.add_argument("--version", action="version", version=VERSION)
-    p.parse_args(['--version'])
     analysis = p.add_argument_group(title="JTK_CYCLE analysis options")
 
     analysis.add_argument("-f", "--filename",
