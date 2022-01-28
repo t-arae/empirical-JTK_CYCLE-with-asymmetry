@@ -116,7 +116,7 @@ def get_best_match(serie,waveform,triples,dref,new_header):
     #print serie[0]
     lamb_get_matches = lambda triple: get_matches(serie[1:],triple,dref,new_header)
     ### This 'res' is the array with the p-values we want
-    res = np.array(map(lamb_get_matches,triples))
+    res = np.array(list(map(lamb_get_matches,triples)))
     #print res
     r = pick_best_match(res)
     best = [serie[0],waveform,r[2],r[3],r[4],r[5],r[6],r[0],r[1]]
@@ -199,13 +199,13 @@ def get_matches(kkey,triple,d_ref,new_header):
     nadir = (phase+width)%period
     #print kkey
     #print reference
-    reference = map(float,reference)
-    kkey = map(float,kkey)
+    reference = list(map(float,reference))
+    kkey = list(map(float,kkey))
     tau,p = kt(reference,kkey)#generate_mod_series(reference,serie)
     #print period,phase,nadir,tau,p
     #print reference, kkey
     #print kt(map(float,reference),map(float,kkey))
-    serie = map(float,list(kkey)    )
+    serie = list(map(float,list(kkey)))
     p = p/2.0
     #tau = farctanh(tau)
     maxloc = new_header[serie.index(max(serie))]
