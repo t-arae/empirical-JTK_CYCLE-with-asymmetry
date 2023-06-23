@@ -103,14 +103,22 @@ The output *jtkout.txt and *GammaP.txt files have columns as described below
 
 ##Version information:
 
-* Python 2.7.11 (default, Dec  5 2015, 14:44:47)
-* [GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.1.76)] on darwin
-
-* cython.__version__ 0.24
-* scipy.__version__ 0.15.1
-* numpy.__version__ 1.11.0
-* statsmodels.__version__ 0.6.1
-
+* Python 3.10.6
+* gcc (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0
+* Cython          0.29.35
+* numpy           1.25.0
+* packaging       23.1
+* pandas          2.0.2
+* patsy           0.5.3
+* pip             22.0.2
+* python-dateutil 2.8.2
+* pytz            2023.3
+* scipy           1.10.1
+* setuptools      59.6.0
+* six             1.16.0
+* statsmodels     0.14.0
+* tzdata          2023.3
+* wheel           0.37.1
 
 ## License:
 This code is released with the MIT License. See the License.txt file for more information.
