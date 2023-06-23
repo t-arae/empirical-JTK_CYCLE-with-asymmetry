@@ -101,7 +101,7 @@ The output *jtkout.txt and *GammaP.txt files have columns as described below
 **GammaBH**: Benjmanini-Hochberg adjusted p-value of GammaP
 
 
-##Version information:
+## Version information:
 
 * Python 3.10.6
 * gcc (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0
