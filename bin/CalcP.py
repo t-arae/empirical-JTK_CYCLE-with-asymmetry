@@ -8,7 +8,7 @@ Use ./CalcP.py -h to see usage
 Credit for the arbfit code goes to Nablaquabla
 """
 import numpy as np
-import matplotlib.pylab as plt
+#import matplotlib.pylab as plt
 from mpfit import mpfit
 
 VERSION="0.9"
@@ -31,6 +31,8 @@ import os.path
 import scipy.stats as ss
 import pandas as pd
 import statsmodels.stats.multitest as ssm
+
+np.random.seed(777)
 
 def main(args):
     #def calcP(fn_jtk,pkl):
